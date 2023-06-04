@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Tags In HTML</title>
+</head>
+<body>
+    <!--forms are used to collect data from the user  -->
+    <form action="/action.php">
+        <!-- Create the UserName and Password Form for the user -->
+        <input type="text" placeholder="Enter Your Username">
+        <br>
+        <input type="password" placeholder="Enter Your Password">
+        <br>
+        <hr>
+        <!-- Label Tags  -->
+        <!-- Radio button testing -->
+        <!-- Why we give same name in each radio button
+           because we have to make sure that only one radio button clickable out of all buttons for that we bind the all radio buttons in the one name id
+           for lable we the for attribtes and that for attributes values from the id of the radio button i.e. input element id
+        -->
+        <!-- Label is also used if we click on the text of radio buttons then the radio buttons automatically clickable -->
+        <label for="fruits101">
+            <input type="radio" value="Mango" name="fruits" id="fruits101">Mango
+        </label>
+        <br>
+        <label for="fruits102">
+            <input type="radio" value="Peach" name="fruits" id="fruits102">Peach
+        </label>
+        <br>
+        <label for="fruits103">
+            <input type="radio" value="Apple" name="fruits" id="fruits103">Apple
+        </label>
+        <br>
+        <label for="fruits104">
+            <input type="radio" value="Chickoo" name="fruits" id="fruits104">Chickoo
+        </label>
+        <br>
+        <label for="fruits105">
+            <input type="radio" value="Banana" name="fruits" id="fruits105">Banana
+        </label>
+
+    <br>
+    <!-- It is good practice to use the label tags in the form tag so that it is more redable format -->
+    <hr>
+    <label for="subject101">
+        <input type="checkbox" value="Physics" name="sub" id="subject101">Physics
+    </label>
+       <br> 
+    <label for="subject102">
+        <input type="checkbox" value="Chemistry" name="sub" id="subject102">Chemistry
+    </label>
+    <br> 
+    <label for="subject103">
+        <input type="checkbox" value="Mathematics" name="sub" id="subject103">Mathematics
+    </label>
+    <br> 
+    <label for="subject104">
+        <input type="checkbox" value="Biology" name="sub" id="subject104">Biology
+    </label>
+    <br> 
+    <label for="subject105">
+        <input type="checkbox" value="Computer Science" name="sub" id="subject105">Computer Science
+    </label>
+    <br>
+    <hr>
+    <select name="city">
+        <option value="Mumbai">Mumbai</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Banglore">Banglore</option>
+        <option value="Pune">Pune</option>
+        <option value="Hyderbad">Hyderabad</option>
+    </select>
+
+    <br>
+    <hr>
+      
+    <textarea name="Feedback" id="fbk" cols="70" rows="5" placeholder="Enter Your Feedback"></textarea>
+      
+        
+    </form>
+</body>
+</html>
